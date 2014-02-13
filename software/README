@@ -1,0 +1,31 @@
+
+----------------------------------------------------------------------------
+- connected using ssh -Y (X11 forwarding)
+- please launch the following commands
+----------------------------------------------------------------------------
+# test of music, with 3D display
+cd music/test; mpirun -np 4 /usr/local/bin/music /root/music/test/demo.music
+
+# test of brian giving a rasterplot
+python -c 'from brian import *; brian_sample_run()'
+
+# demo of neuron
+neurondemo
+
+----------------------------------------------------------------------------
+- connected using only /bin/bash
+- please launch the following commands
+----------------------------------------------------------------------------
+# examples of nest
+cd /root/nest-2.2.2/examples/nest; nest brunel-2000.sli
+
+# examples of pyNN, using either nest, neuron or brian
+cd /root/PyNN-0.7.5/examples
+python brunel.py nest
+python brunel.py neuron
+python brunel.py brian
+
+
+
+
+
