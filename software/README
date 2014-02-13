@@ -1,10 +1,9 @@
-
 ----------------------------------------------------------------------------
 - connected using ssh -Y (X11 forwarding)
 - please launch the following commands
 ----------------------------------------------------------------------------
 # test of music, with 3D display
-cd music/test; mpirun -np 4 /usr/local/bin/music /root/music/test/demo.music
+cd /root/music/test; mpirun -np 4 /usr/local/bin/music /root/music/test/demo.music
 
 # test of brian giving a rasterplot
 python -c 'from brian import *; brian_sample_run()'
@@ -13,7 +12,7 @@ python -c 'from brian import *; brian_sample_run()'
 neurondemo
 
 ----------------------------------------------------------------------------
-- connected using only /bin/bash
+- connected using either /bin/bash or ssh -Y
 - please launch the following commands
 ----------------------------------------------------------------------------
 # examples of nest
